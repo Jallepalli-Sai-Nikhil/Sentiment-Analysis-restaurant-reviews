@@ -34,9 +34,12 @@ jobs:
       # -v for verbose output, --only-binary :all: to prefer wheels
       # Timeout to catch hangs
 
-    - name: 🧠 Train & Export Model
+    - name: 🧠 Train & Export Model + Vectorizer
       run: |
         python model/model.py  # ✅ Run the training script
+        test -f model/model.pkl && echo "✅ Model saved: model/model.pkl" || { echo "❌ Model not found!"; exit 1; }
+        test -f model/vectorizer.pkl && echo "✅ Vectorizer saved: model/vectorizer.pkl" || { echo "❌ Vectorizer not found!"; exit 1; }
+      # Ensures both model.pkl & vectorizer.pkl are created
 
     - name: 🐳 Build & Push Docker Image
       run: |
