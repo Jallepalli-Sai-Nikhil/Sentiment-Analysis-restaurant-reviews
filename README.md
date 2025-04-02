@@ -29,6 +29,10 @@ This project is a **Sentiment Analysis** system for **restaurant reviews** using
 
 ---
 
+## 🌎 Live Demo (Render Deployment)
+🔗 **[Live App on Render](https://your-render-deploy-link.onrender.com)** *(May sleep due to free-tier limitations)*
+
+
 ## 🎬 Local Run Demo Video
 [![Watch the Video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
 
