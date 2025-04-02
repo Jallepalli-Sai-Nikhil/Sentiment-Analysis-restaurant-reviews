@@ -118,16 +118,16 @@ The workflow automatically builds and pushes the image to Docker Hub whenever yo
 
 ## 📌 Future Enhancements
 ### 🚀 Upcoming Features:
-✅ Add Deep Learning models (**LSTMs, Transformers**)
-✅ Employ Hugging Face API for **LLM models**
-✅ **Deploy on AWS/GCP** for scalability
-✅ Integrate **MLflow** for model tracking and experiments
-✅ Enhance Flask Routes with better logging and error handling
-✅ Add many small Python packages **(Flask, Rate Limit, etc.)**
-✅ Implement MLOps tools like **DVC, DagsHub**
-✅ Use **Google Cloud Storage (GCS)** for dataset & model storage
-✅ Integrate **Docker Volumes** for persistent storage on GCP
-✅ Utilize **AJAX** & other small frontend libraries for better UX
+* ✅ Add Deep Learning models (**LSTMs, Transformers**)
+* ✅ Employ Hugging Face API for **LLM models**
+* ✅ **Deploy on AWS/GCP** for scalability
+* ✅ Integrate **MLflow** for model tracking and experiments
+* ✅ Enhance Flask Routes with better logging and error handling
+* ✅ Add many small Python packages **(Flask, Rate Limit, etc.)**
+* ✅ Implement MLOps tools like **DVC, DagsHub**
+* ✅ Use **Google Cloud Storage (GCS)** for dataset & model storage
+* ✅ Integrate **Docker Volumes** for persistent storage on GCP
+* ✅ Utilize **AJAX** & other small frontend libraries for better UX
 ---
 
 ## 👏 Acknowledgments
