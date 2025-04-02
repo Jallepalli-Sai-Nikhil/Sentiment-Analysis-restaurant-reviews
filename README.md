@@ -1,6 +1,6 @@
 # 🌟 Sentiment Analysis on Restaurant Reviews
 
-![Sentiment Analysis Banner](https://drive.google.com/file/d/1LZK4wVcY8JI9rym_05YwZmFMi-4RUXBT/view?usp=sharing)
+![Sentiment Analysis Banner](misc/review_illustration.jpg)
 
 #% 📌 Project Overview
 This project is a **Sentiment Analysis** system for **restaurant reviews** using **Flask, Sklearn, Joblib, Config.yaml, Docker, and GitHub Actions**. Users can submit their reviews via an HTML UI, and the system will classify them as either **Positive 😊** or **Negative 😞** using a trained machine learning model.
