@@ -1,5 +1,5 @@
 model_path: "model/model.pkl"
 vectorizer_path: "model/vectorizer.pkl"
 port: 5000
-root_dir: "./"
-template_dir: "templates"
+root_dir: ".."
+template_folder: "../templates"
