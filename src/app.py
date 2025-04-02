@@ -3,7 +3,7 @@ import joblib
 import spacy
 import yaml
 from sklearn.feature_extraction.text import CountVectorizer
-
+import os
 # Load configuration
 with open("utils/config.yml", "r") as file:
     config = yaml.safe_load(file)
@@ -25,7 +25,7 @@ def preprocess_text(text):
     return " ".join(tokens)
 
 # Initialize Flask app
-app = Flask(__name__, template_folder="../templates")
+app = Flask(__name__, template_folder=os.path.abspath(os.path.join(os.path.dirname(__file__), "../templates")))
 
 @app.route("/", methods=["GET", "POST"])
 def index():
