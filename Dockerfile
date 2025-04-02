@@ -16,6 +16,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 COPY src/ src/
 COPY utils/ utils/
 COPY model/model.pkl model/model.pkl
+COPY model/vectorizer.pkl model/vectorizer.pkl
 
 # Use a non-root user for security
 RUN adduser --disabled-password appuser && chown -R appuser /app
