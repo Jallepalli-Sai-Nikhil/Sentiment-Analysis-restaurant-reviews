@@ -17,13 +17,22 @@ jobs:
     - name: 🐍 Set Up Python
       uses: actions/setup-python@v4
       with:
-        python-version: "3.9"
+        python-version: "3.12"  # Updated to Python 3.12
+
+    - name: 🛠️ Install Build Tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential python3-dev
+      # Ensures C compiler and dev libraries for Python 3.12
 
     - name: 📦 Install Dependencies
       run: |
-        pip install -r requirements.txt
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt -v --only-binary :all:
         python -m spacy download en_core_web_sm
-
+      timeout-minutes: 15
+      # -v for verbose output, --only-binary :all: to prefer wheels
+      # Timeout to catch hangs
 
     - name: 🧠 Train & Export Model
       run: |
