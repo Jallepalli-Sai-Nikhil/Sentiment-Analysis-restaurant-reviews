@@ -50,7 +50,7 @@ Fast forward to **2025**, I have transformed that simple project into a **full-f
 - Hosted it on **Render** for public access
 - Integrated **GitHub Secrets** for security
 
-This transformation showcases **how much I've learned** and grown in software engineering, DevOps, and MLOps! 🚀
+### This transformation showcases **how much I've learned** and grown in software engineering, DevOps, and MLOps! 🚀
 ---
 
 ## 🛠️ Setup & Installation
