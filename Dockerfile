@@ -15,15 +15,15 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Copy the rest of the application files
 COPY src/ src/
 COPY utils/ utils/
-COPY model/model.pkl model/model.pkl
-COPY model/vectorizer.pkl model/vectorizer.pkl
+COPY templates/ templates/   
+COPY model/ model/           
 
 # Use a non-root user for security
 RUN adduser --disabled-password appuser && chown -R appuser /app
 USER appuser
 
-# Expose the application port (if needed)
+# Expose the port for Render (Render automatically provides $PORT)
 EXPOSE 5000
 
-# Default command to run the Flask app
-CMD ["python", "src/app.py"]
+# Start the app with Gunicorn (better for production)
+CMD gunicorn --bind 0.0.0.0:$PORT src.app:app
