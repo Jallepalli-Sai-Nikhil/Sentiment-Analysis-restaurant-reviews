@@ -1,4 +1,5 @@
-root_dir: ".."  # Root directory relative to utils/
-template_folder: "../templates"  # Templates folder relative to utils/
-model_path: "../model/model.pkl"
-vectorizer_path: "../model/vectorizer.pkl"
+model_path: "model/model.pkl"
+vectorizer_path: "model/vectorizer.pkl"
+port: 5000
+root_dir: ".."
+template_folder: "../templates"
